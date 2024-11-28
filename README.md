@@ -1,36 +1,46 @@
-# Android Sample App
+![image](https://github.com/user-attachments/assets/28135c91-bfab-4195-a20d-4a10a3f33886)
 
-This repo contains a very simple Android app that demonstrates 2 main concepts:
-1. Working with `DescopeFlowView` and `DescopeFlow`
-2. Showing an example of session management
+# Descope's Native Flows Kotlin Sample App
 
-## Setup
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-- Make sure to set the `descopeProjectId` variable in the `DemoApplication` class.
-- Gradle Sync
-- Run the app
+Welcome to Descope's Native Flows Kotlin Sample App, a demonstration of how to integrate Descope native flows for user authentication within a Kotlin application. By exploring this project, you can understand how Descope works with Kotlin to manage native flows. For an example with all authentication methods, refer to the [Kotlin Sample App](https://github.com/descope-sample-apps/kotlin-sample-app).
 
-## Caveats
+## Features
+This sample app includes:
 
-- The code as it is assumes a simple flow is being run. Some of the possibilities that
-the flow mechanism offers require a bit of setup, both on the Android side and on the
-Descope console. You can change the `?flow=` query parameter to choose a different flow.
-Read more about the abilities and required setup in the [Descope SDK repo README and
-documented classes](https://github.com/descope/descope-kotlin).
-- The code as it is, is meant to be viewed as a simplified usage reference. It is intentionally
-a lean representation of some of the main concepts in the Descope Android SDK
-and a general usage example, and not what a fully fledged app usually looks like.
-This is done for brevity and code-readability.
+- **App Client**: An example of how the client communicates with Descope.
 
-## Additional Information
+## Getting Started
+Follow these steps to run the sample app and explore Descope's capabilities with Kotlin:
 
+### Prerequisites
+Make sure you have the following installed:
+
+- Android Studio 
+
+### Run the app
+
+1. Clone this repo
+2. Open the project within Android Studio
+3. Within the `DemoApplication.kt` file of the project, change the `descopeProjectId` (If in a non-US region, or using a custom domain with CNAME, uncomment `baseUrl` and replace `myBaseURL` with your specific localized base URL)
+
+4. **(Optional) Self-Host Your Flow**: Your Descope authentication flow is automatically hosted by Descope at `https://api.descope.com/login/<your_descope_project_id>` but you can use your own website or domain to host your flow. You can modify the value for the flow Url in the `LoginActivity.kt` file to include your own hosted page with our Descope Web Component, as well as alter the `?flow=sign-up-or-in` parameter to run a different flow.
+
+```
+val descopeFlow = DescopeFlow(Uri.parse("https://api.descope.com/login/$descopeProjectId?flow=sign-up-or-in"))
+```
+
+> For more information about Auth Hosting, visit our docs on it [here](https://docs.descope.com/auth-hosting-app)
+
+5. Run the simulator within Android Studio - The play button located in the top right
+
+
+## Learn More
 To learn more please see the [Descope Documentation and API reference page](https://docs.descope.com/).
 
 ## Contact Us
-
-If you need help you can email [Descope Support](mailto:support@descope.com)
+If you need help you can [contact us](https://docs.descope.com/support/)
 
 ## License
-
-The Descope SDK for Android and Android Sample App are licensed for use under the terms and conditions
-of the [MIT license Agreement](https://github.com/descope/descope-android/blob/main/LICENSE).
+Descope's Native Flows Kotlin Sample App is licensed for use under the terms and conditions of the MIT license Agreement.

@@ -13,6 +13,7 @@ class DemoApplication: Application() {
 
         // Descope Setup
         Descope.setup(context = this, projectId = descopeProjectId) {
+ //         baseUrl = "myBaseUrl"
             val isDebuggable = 0 != applicationInfo.flags and ApplicationInfo.FLAG_DEBUGGABLE
             if (isDebuggable) {
                 logger = DescopeLogger()

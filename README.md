@@ -17,7 +17,8 @@ Follow these steps to run the sample app and explore Descope's capabilities with
 ### Prerequisites
 Make sure you have the following installed:
 
-- Android Studio 
+- Android Studio
+- Your Project ID which you can get in the [Project Settings](https://app.descope.com/settings/project)
 
 ### Run the app
 

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Descope Android Demo</string>
+    <string name="activity_main_label">Main Screen</string>
+    <string name="activity_login_label">Getting Started</string>
+    <string name="close_button">close button</string>
+    <string name="log_out_title">Log Out</string>
+    <string name="log_in_button">Log In</string>
+    <string name="let_s_get_started_title">Let\'s get started</string>
+    <string name="api_button_title">Perform API Call</string>
+    <string name="api_title">The button below will simulate a protected API call. That means that a session JWT will be sent to the server to validate using the Descope SDK.</string>
+</resources>

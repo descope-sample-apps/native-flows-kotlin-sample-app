@@ -33,7 +33,7 @@ class LoginActivity : AppCompatActivity(), DescopeFlowView.Listener {
         hideFlowContainer()
 
         flowView.listener = this
-        val descopeFlow = DescopeFlow(Uri.parse("https://api.descope.com/login/$descopeProjectId?flow=sign-up-or-in")) // This should be wherever you host your flow
+        val descopeFlow = DescopeFlow(Uri.parse("https://api.descope.com/login/$descopeProjectId?flow=sign-up-or-in&shadow=false")) // This should be wherever you host your flow
         loginButton.setOnClickListener {
             loadingIndicator.visibility = VISIBLE
             flowView.run(descopeFlow)

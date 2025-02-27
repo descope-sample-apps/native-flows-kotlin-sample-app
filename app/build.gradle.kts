@@ -35,5 +35,5 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.material)
-    implementation(libs.descope.kotlin)
+    implementation(project(":descopesdk"))
 }

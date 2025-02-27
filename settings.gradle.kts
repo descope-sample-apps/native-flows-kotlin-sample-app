@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "Descope Android Demo"
 include(":app")
- 
+include(":descopesdk")
+project(":descopesdk").projectDir = File(settingsDir, "../descope-kotlin/descopesdk")

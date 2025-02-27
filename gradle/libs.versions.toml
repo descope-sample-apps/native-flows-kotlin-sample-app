@@ -2,7 +2,6 @@
 agp = "8.8.1"
 appcompat = "1.7.0"
 constraintlayout = "2.2.0"
-descopeKotlin = "0.13.0"
 kotlin = "2.0.0"
 coreKtx = "1.15.0"
 material = "1.12.0"
@@ -11,7 +10,6 @@ material = "1.12.0"
 androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
 androidx-constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
-descope-kotlin = { module = "com.descope:descope-kotlin", version.ref = "descopeKotlin" }
 material = { module = "com.google.android.material:material", version.ref = "material" }
 
 [plugins]

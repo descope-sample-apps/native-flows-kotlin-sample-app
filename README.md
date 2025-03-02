@@ -29,7 +29,7 @@ Make sure you have the following installed:
 4. **(Optional) Self-Host Your Flow**: Your Descope authentication flow is automatically hosted by Descope at `https://api.descope.com/login/<your_descope_project_id>` but you can use your own website or domain to host your flow. You can modify the value for the flow Url in the `LoginActivity.kt` file to include your own hosted page with our Descope Web Component, as well as alter the `?flow=sign-up-or-in` parameter to run a different flow.
 
 ```
-val descopeFlow = DescopeFlow(Uri.parse("https://api.descope.com/login/$descopeProjectId?flow=sign-up-or-in&shadow=false"))
+val descopeFlow = DescopeFlow("https://api.descope.com/login/$descopeProjectId?flow=sign-up-or-in&shadow=false")
 ```
 
 > For more information about Auth Hosting, visit our docs on it [here](https://docs.descope.com/auth-hosting-app)
